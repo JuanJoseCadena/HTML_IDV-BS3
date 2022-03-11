@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Instituto de Desarrollo de Videojuegos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" id="titletop">
+	<div class="row">
+		<div class="col-sm-1" id="logodiv">
+			<img src="logo.png" alt="" id="logo">
+		</div>
+		<div class="col-sm-9">
+  			<h1 id="title">IDV</h1>
+  			<p id="subtitle">Instituto de Desarrollo de Videojuegos</p> 
+  		</div>
+  		<div class="col-sm-1" id="boton">
+  			<button type="button" id="btn1" onclick="botontop()"><strong>Inscripción</strong></button>
+  		</div>
+  	</div>
+</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid" id="navegation">
+    <ul class="nav navbar-nav">
+      <li><a class="active" href="#">Introducción</a></li>
+      <li><a href="QS.html">¿Quién Somos?</a></li>
+      <li><a href="PE.html">Planes de Estudio</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid" id="box1">	
+  	<div id="text1">
+  		<p>Somos el Instituto de Desarrollo de Videojuegos, una entidad educativa</p>
+  		<p>enfocada en la enseñanza de maquetado, modelación y programación</p>
+  		<p>de juegos de video</p>
+  	</div>
+  	<img src="se-buscan-programadores-de-cobol-urgentemente-a-causa-del-covid-19.jpg" alt="" id="img1">
+</div>
+
+<div class="container-fluid" id="box2">
+	<div id="text2">
+		<p>Ofrecemos cursos sobre distintos entornos,</p>
+		<p>programas y plataformas dedicadas a la</p>
+		<p>programación y modelado de videojuegos, así</p>
+		<p>como lenguajes de programación enfocados a</p>
+		<p>complementar dichos entornos</p>
+	</div>
+	<div class="col-sm-6" id="cdiv">
+		<img src="2p4i.png" alt="" id="img2">
+	</div>
+	<div class="col-sm-6" id="unitydiv">
+		<img src="unity-masterbrand-black.png" alt="" id="img3">
+	</div>
+</div>
+
+<div class="container-fluid" id="box3">	
+  	<div id="text3">
+  		<p>Inscríbete para dar el primer paso y</p>
+  		<p>converirte en un desarrollador de una de</p>
+  		<p>las empresas de entretenimiento mas</p>
+  		<p>consumidas a nivel mundial</p>
+  	</div>
+  	<img src="Unity.png" alt="" id="img4">
+  	<div id="project">
+  		<a href="game/game.html" target="_blank" rel="noopener noreferrer"><button type="button" id="prjbtn">Probar proyecto</button></a>
+  		<div id="game" style="display:none">
+  			
+  		</div>
+  	</div>
+</div>
+
+<div class="container-fluid" id="box4">	
+  	<div id="text4">
+  		<p>Las inscripciones están</p>
+  		<p>abiertas para todo tipo de</p>
+  		<p>público</p>
+  	</div>
+  	<img src="lenguaje-de-programación.jpg" alt="" id="img5">
+  	<div id="btndiv">
+  		<button type="button" id="btn2" onclick="formulario()">Pulsa aquí para inscribirte</button>
+  	</div>
+  	
+  	<div id="insform" style="display:none">
+  		<form>
+  			 <label for="name" id="namelbl">Nombre completo:</label><br>
+ 			 <input type="text" id="name" name="name"><br>
+ 			 <label for="e-mail" id="emaillbl">Correo electrónico:</label><br>
+ 			 <input type="text" id="e-mail" name="e-mail"><br>
+ 			 <label for="curso" id="cursolbl">Curso:</label><br>
+ 			 <select id="curso" name="curso">
+ 			 	<option>Java</option>
+ 			 	<option>C++</option>
+ 			 	<option>C#</option>
+ 				<option>Unity</option>
+ 			 </select><br>
+ 			 <input type="button" id="formbtn" value="Enviar solicitud" onclick="confirm()">
+		</form>
+  	</div>
+</div>
+
+<div class="container-fluid" id="box5">
+	<div class="col-sm-4" id="crdiv1">
+		<p id="contact"><strong>Contacto</strong></p>
+		<div id="cnt1">
+			<p id="email">
+				<img src="mail icon.png" alt="" id="mail"> <span id="ct1">IDVCOL@gmail.com</span>
+			</p>
+		</div>
+		<div id="cnt2">
+			<p id="dir">
+				<img src="address icon.png" alt="" id="address"> <span id="ct2">Calle 15 #32-54, Bogotá D.C.</span>
+			</p>
+		</div>
+		<div id="cnt3">
+			<p id="tel">
+				<img src="phone icon.png" alt="" id="phone"> <span id="ct3">7328975</span>
+			</p>
+		</div>
+	</div>
+	<div class="col-sm-4" id="crdiv2">
+		<p>© Copyright IDV Colombia 2021</p>
+		<p>Todos los derechos reservados</p>
+	</div>
+	<div class="col-sm-4" id="crdiv3">
+	<p id="social"><strong>Redes sociales</strong></p>
+		<div id="rds1">
+			<p id="whats">
+				<img src="whatsapp icon.png" alt="" id="whatsapp"> <span id="rs1">+57 3105986412</span>
+			</p>
+		</div>
+		<div id="rds2">
+			<p id="face">
+				<img src="facebook icon.png" alt="" id="facebook"> <span id="rs2">Instituto de Desarrollo de Videojuegos</span>
+			</p>
+		</div>
+		<div id="rds3">
+			<p id="twit">
+				<img src="twitter icon.png" alt="" id="twitter"> <span id="rs3">@InsDesarrolloVJ</span>
+			</p>
+		</div>
+		<div id="rds4">
+			<p id="inst">
+				<img src="instagram logo.png" alt="" id="instagram"> <span id="rs4">@IDVColombia</span>
+			</p>
+		</div><br>
+	</div>
+</div>
+
+</body>
+</html>
